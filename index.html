@@ -193,6 +193,8 @@ footer a{color:rgba(240,230,211,.78)}
 #map-status{min-height:1.5rem;margin:.25rem 2rem 0;text-align:center;font-family:var(--mono);font-size:.72rem;color:rgba(240,230,211,.7)}
 #map-status.error{padding:.75rem;background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.45);color:var(--paper)}
 path.state:focus{stroke:var(--paper);stroke-width:2.5;opacity:1}
+path.state:focus:not(:focus-visible){outline:none}
+path.state:focus-visible{outline:none;stroke:var(--paper);stroke-width:2.5;opacity:1}
 #state-panel[inert]{visibility:hidden}
 #state-panel:not([inert]){visibility:visible}
 .panel-close,.panel-share-btn{color:var(--paper)}
